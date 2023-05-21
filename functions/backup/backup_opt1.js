@@ -8,6 +8,8 @@ app.post("/", async (req, res) => {
   channelTypeInput = req.body["channeltype"];
   channelRefPath = req.body["channelRefPath"];
 
+  console.log("channelRefPath: " + channelRefPath);
+
   res.status(200).send(
     JSON.stringify({
       returncode: 0,
