@@ -4,6 +4,7 @@ const admin = require("firebase-admin");
 admin.initializeApp();
 const db = admin.firestore();
 var storage = admin.storage();
+const { getStorage } = require("firebase-admin/storage");
 const fireStoreFieldValue = admin.firestore.FieldValue;
 
 module.exports = {
@@ -11,4 +12,5 @@ module.exports = {
   db,
   storage,
   fireStoreFieldValue,
+  getStorage,
 };
