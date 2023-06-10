@@ -52,4 +52,4 @@ app.post("/restore", (req, res) => {
     });
 });
 
-exports.restApiBackupOpt1 = functions.https.onRequest(app);
+exports.restApiBackupOpt2 = functions.https.onRequest(app);
