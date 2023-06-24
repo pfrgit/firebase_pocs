@@ -13,6 +13,7 @@ exports.getBillingInfo = functions.https.onRequest( async (req, res) =>{
     const billinginfo = await billing.getBillingInfo({name: PROJECT_NAME})
     console.log(billinginfo)
     res.send("all done")
+
 })
 
 exports.billingPubSub = functions.pubsub.topic("billing").onPublish((message) =>{
@@ -24,6 +25,8 @@ exports.billingPubSub = functions.pubsub.topic("billing").onPublish((message) =>
         disableBilling()
     }
     console.log(data)
+
+    return null
 })
 
 
