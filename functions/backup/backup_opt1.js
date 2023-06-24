@@ -4,6 +4,7 @@ const cors = require("cors");
 const app = express();
 
 const {
+  admin,
   db,
   fireStoreFieldValue,
   getStorage,
@@ -12,7 +13,7 @@ const {
 
 app.post("/backup", (req, res) => {
   //creates local backup of firestore and then uploads to firebase cloud bucket
-
+  console.log(firestoreExpImp);
   firestoreExpImp
     .backups()
     .then((json) => {

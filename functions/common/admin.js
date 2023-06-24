@@ -7,7 +7,7 @@ var storage = admin.storage();
 const { getStorage } = require("firebase-admin/storage");
 const fireStoreFieldValue = admin.firestore.FieldValue;
 
-const { firestoreExpImp } = require("firestore-export-import");
+const  firestoreExpImp  = require("firestore-export-import");
 
 module.exports = {
   admin,
