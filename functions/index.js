@@ -5,4 +5,4 @@ const billing = require("./billing_pubsub/billing");
 exports.restApiBackupOpt1 = restApiBackupOpt1.restApiBackupOpt1;
 exports.restApiBackupOpt2 = restApiBackupOpt2.restApiBackupOpt2;
 exports.billingPubSub = billing.billingPubSub;
-exports.getBillingInfo = billing.getBillingInfo;
+exports.billingMonitoringServiceAPI = billing.billingMonitoringServiceAPI;
